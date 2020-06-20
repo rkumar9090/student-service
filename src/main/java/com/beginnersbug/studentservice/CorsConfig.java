@@ -11,7 +11,7 @@ public class CorsConfig {
 	public WebMvcConfigurer corsConfigure() {
 		return new WebMvcConfigurerAdapter() {
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/**");
+				registry.addMapping("/**");
 			}
 		};
 	}
